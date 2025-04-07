@@ -48,7 +48,7 @@
         <div class="admission-form">
             <div class="form-header">
                 <img src="images/icon.jpg" alt="Institute Logo" class="logo-img">
-                <h2>EDUCATIONAL & IT TRAINING ACADEMY</h2>
+                <h2>CODEGENIX INSTITUTE OF TECHNOLOGY</h2>
                 <h3>ADMISSION FORM</h3>
             </div>
             
@@ -146,6 +146,59 @@
                     </div>
                 </div>
 
+                <div class="education-section">
+                    <h4>Educational Details</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="matricBoard">Matriculation Board:</label>
+                            <input type="text" id="matricBoard" name="matricBoard" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="matricSchool">School Name:</label>
+                            <input type="text" id="matricSchool" name="matricSchool" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="matricPercentage">Matriculation Percentage:</label>
+                            <input type="number" id="matricPercentage" name="matricPercentage" min="0" max="100" step="0.01" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="matricYear">Year of Passing (Matric):</label>
+                            <input type="number" id="matricYear" name="matricYear" min="2000" max="2024" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="matricCity">School City:</label>
+                            <input type="text" id="matricCity" name="matricCity" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="seniorBoard">Senior Secondary Board:</label>
+                            <input type="text" id="seniorBoard" name="seniorBoard" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="seniorSchool">School Name:</label>
+                            <input type="text" id="seniorSchool" name="seniorSchool" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="seniorPercentage">Senior Secondary Percentage:</label>
+                            <input type="number" id="seniorPercentage" name="seniorPercentage" min="0" max="100" step="0.01" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="seniorYear">Year of Passing (Senior Secondary):</label>
+                            <input type="number" id="seniorYear" name="seniorYear" min="2000" max="2024" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="seniorCity">School City:</label>
+                            <input type="text" id="seniorCity" name="seniorCity" required>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="form-row">
                     <div class="form-group">
                         <label for="nid">ABC ID:</label>
@@ -222,6 +275,13 @@
         </div>
     </main>
 
+    <!-- Success Notification -->
+    <div id="successNotification" class="notification" style="display: none;">
+        <i class="fas fa-check-circle"></i>
+        <p>Payment successful! Redirecting to home page...</p>
+    </div>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script src="script.js"></script>
     <script src="admission-auth.js"></script>
     <script src="admission.js"></script>
