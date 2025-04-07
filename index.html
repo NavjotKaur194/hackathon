@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codegenix Institute of Technology</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="contact-info">
+                <span><i class="fas fa-question-circle"></i> Have a questions?</span>
+                <span><i class="fas fa-phone"></i>7717671774</span>
+                <span><i class="fas fa-envelope"></i> info@codegenix.com</span>
+            </div>
+            <div class="auth-buttons" id="authButtons">
+                <a href="login.html" class="login-btn">Log In</a>
+                <a href="register.html" class="register-btn">Register</a>
+            </div>
+            <div class="user-menu" id="userMenu" style="display: none;">
+                <span class="user-email"></span>
+                <button class="logout-btn" onclick="logout()">Logout</button>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="logo">
+                <span class="logo-letter">Code</span>genix
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#" onclick="checkAdmissionAccess(event)">Admissions</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1>Codegenix<br>Institute of Technology</h1>
+                </div>
+                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

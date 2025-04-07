@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Codegenix Institute of Technology</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i>7717671774</span>
+                <span><i class="fas fa-envelope"></i> info@codegenix.com</span>
+            </div>
+            <div class="auth-buttons" id="authButtons">
+                <a href="login.html" class="login-btn">Log In</a>
+                <a href="register.html" class="register-btn">Register</a>
+            </div>
+            <div class="user-menu" id="userMenu" style="display: none;">
+                <span class="user-email"></span>
+                <button class="logout-btn" onclick="logout()">Logout</button>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="logo">
+                <span class="logo-letter">Code</span>genix
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#" onclick="checkAdmissionAccess(event)">Admissions</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <section class="contact-hero">
+            <h1>Get in Touch</h1>
+            <p>We're here to help and answer any questions you might have</p>
+        </section>
+
+        <section class="contact-content">
+            <div class="about-institute">
+                <h2>About Codegenix Institute of Technology</h2>
+                <p>Codegenix Institute of Technology is a premier educational institution dedicated to nurturing future technology leaders. With state-of-the-art facilities, industry-experienced faculty, and a commitment to excellence, we provide a dynamic learning environment that prepares students for successful careers in the ever-evolving tech industry. Our focus on practical knowledge, innovation, and research makes us a leading choice for aspiring technologists.</p>
+            </div>
+
+            <div class="contact-info-cards">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Address</h3>
+                    <p>123 Tech Park Road</p>
+                    <p>Silicon Valley Layout</p>
+                    <p>Bangalore - 560001</p>
+                    <p>Karnataka, India</p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>Main: +91 7717671774</p>
+                    <p>Admissions: +91 9316009642</p>
+                    <p>Support: +91 6284290272</p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>General: info@codegenix.com</p>
+                    <p>Admissions: admissions@codegenix.com</p>
+                    <p>Support: support@codegenix.com</p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Office Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p>Saturday: 9:00 AM - 1:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.985619587854!2d77.5945627!3d12.9715987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

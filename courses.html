@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Codegenix Institute of Technology</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i>7717671774</span>
+                <span><i class="fas fa-envelope"></i> info@codegenix.com</span>
+            </div>
+            <div class="auth-buttons" id="authButtons">
+                <a href="login.html" class="login-btn">Log In</a>
+                <a href="register.html" class="register-btn">Register</a>
+            </div>
+            <div class="user-menu" id="userMenu" style="display: none;">
+                <span class="user-email"></span>
+                <button class="logout-btn" onclick="logout()">Logout</button>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="logo">
+                <span class="logo-letter">Code</span>genix
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#" onclick="checkAdmissionAccess(event)">Admissions</a></li>
+                <li><a href="courses.html" class="active">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="courses-container">
+        <section class="courses-hero">
+            <h1>Our Programs</h1>
+            <p>Empowering Future Technology Leaders</p>
+        </section>
+
+        <section class="programs">
+            <div class="program-card btech">
+                <div class="program-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h2>B.Tech Programs</h2>
+                <div class="program-details">
+                    <div class="branch">
+                        <h3>Computer Science & Engineering</h3>
+                        <ul>
+                            <li>Duration: 4 Years</li>
+                            <li>Seats: 120</li>
+                            <li>Specializations Available:
+                                <ul>
+                                    <li>Artificial Intelligence & ML</li>
+                                    <li>Cloud Computing</li>
+                                    <li>Cybersecurity</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" class="apply-btn" onclick="checkAdmissionAccess(event)">Apply Now</a>
+                    </div>
+                    <div class="branch">
+                        <h3>Information Technology</h3>
+                        <ul>
+                            <li>Duration: 4 Years</li>
+                            <li>Seats: 60</li>
+                            <li>Specializations Available:
+                                <ul>
+                                    <li>Data Science</li>
+                                    <li>Web Technologies</li>
+                                    <li>IoT Systems</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" class="apply-btn" onclick="checkAdmissionAccess(event)">Apply Now</a>
+                    </div>
+                    <div class="branch">
+                        <h3>Electronics & Communication</h3>
+                        <ul>
+                            <li>Duration: 4 Years</li>
+                            <li>Seats: 60</li>
+                            <li>Specializations Available:
+                                <ul>
+                                    <li>VLSI Design</li>
+                                    <li>Embedded Systems</li>
+                                    <li>Communication Systems</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" class="apply-btn" onclick="checkAdmissionAccess(event)">Apply Now</a>
+                    </div>
+                    <div class="branch">
+                        <h3>Electrical & Electronics</h3>
+                        <ul>
+                            <li>Duration: 4 Years</li>
+                            <li>Seats: 60</li>
+                            <li>Specializations Available:
+                                <ul>
+                                    <li>Power Systems</li>
+                                    <li>Control Systems</li>
+                                    <li>Electric Drives</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" class="apply-btn" onclick="checkAdmissionAccess(event)">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-card mtech">
+                <div class="program-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <h2>M.Tech Programs</h2>
+                <div class="program-details">
+                    <div class="branch">
+                        <h3>Computer Science & Engineering</h3>
+                        <ul>
+                            <li>Duration: 2 Years</li>
+                            <li>Seats: 30</li>
+                            <li>Specializations Available:
+                                <ul>
+                                    <li>Advanced Algorithms</li>
+                                    <li>Distributed Systems</li>
+                                    <li>Software Engineering</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" class="apply-btn" onclick="checkAdmissionAccess(event)">Apply Now</a>
+                    </div>
+                    <div class="branch">
+                        <h3>Artificial Intelligence</h3>
+                        <ul>
+                            <li>Duration: 2 Years</li>
+                            <li>Seats: 30</li>
+                            <li>Specializations Available:
+                                <ul>
+                                    <li>Machine Learning</li>
+                                    <li>Computer Vision</li>
+                                    <li>Natural Language Processing</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" class="apply-btn" onclick="checkAdmissionAccess(event)">Apply Now</a>
+                    </div>
+                    <div class="branch">
+                        <h3>Data Science</h3>
+                        <ul>
+                            <li>Duration: 2 Years</li>
+                            <li>Seats: 30</li>
+                            <li>Specializations Available:
+                                <ul>
+                                    <li>Big Data Analytics</li>
+                                    <li>Statistical Computing</li>
+                                    <li>Business Intelligence</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" class="apply-btn" onclick="checkAdmissionAccess(event)">Apply Now</a>
+                    </div>
+                    <div class="branch">
+                        <h3>Cyber Security</h3>
+                        <ul>
+                            <li>Duration: 2 Years</li>
+                            <li>Seats: 30</li>
+                            <li>Specializations Available:
+                                <ul>
+                                    <li>Network Security</li>
+                                    <li>Digital Forensics</li>
+                                    <li>Information Security</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" class="apply-btn" onclick="checkAdmissionAccess(event)">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-card diploma">
+                <div class="program-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h2>Diploma Programs</h2>
+                <div class="program-details">
+                    <div class="branch">
+                        <h3>Computer Science</h3>
+                        <ul>
+                            <li>Duration: 3 Years</li>
+                            <li>Seats: 60</li>
+                            <li>Key Subjects:
+                                <ul>
+                                    <li>Programming Fundamentals</li>
+                                    <li>Database Management</li>
+                                    <li>Web Development</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" class="apply-btn" onclick="checkAdmissionAccess(event)">Apply Now</a>
+                    </div>
+                    <div class="branch">
+                        <h3>Information Technology</h3>
+                        <ul>
+                            <li>Duration: 3 Years</li>
+                            <li>Seats: 60</li>
+                            <li>Key Subjects:
+                                <ul>
+                                    <li>Networking</li>
+                                    <li>System Administration</li>
+                                    <li>IT Infrastructure</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" class="apply-btn" onclick="checkAdmissionAccess(event)">Apply Now</a>
+                    </div>
+                    <div class="branch">
+                        <h3>Electronics</h3>
+                        <ul>
+                            <li>Duration: 3 Years</li>
+                            <li>Seats: 60</li>
+                            <li>Key Subjects:
+                                <ul>
+                                    <li>Circuit Design</li>
+                                    <li>Digital Electronics</li>
+                                    <li>Microprocessors</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" class="apply-btn" onclick="checkAdmissionAccess(event)">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

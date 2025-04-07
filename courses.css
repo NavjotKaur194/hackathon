@@ -1,0 +1,383 @@
+.courses-container {
+    padding: 0;
+    background: #f8f9fa;
+}
+
+.courses-hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 50px;
+}
+
+.courses-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadeInDown 0.8s ease;
+}
+
+.courses-hero p {
+    font-size: 20px;
+    opacity: 0.9;
+    animation: fadeInUp 0.8s ease;
+}
+
+.programs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 50px;
+}
+
+.program-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.program-icon {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.program-icon i {
+    font-size: 48px;
+    color: #4CAF50;
+}
+
+.program-card h2 {
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #4CAF50;
+}
+
+.program-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.branch {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.branch:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.branch h3 {
+    color: #4CAF50;
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.branch ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.branch ul li {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.branch ul li ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.branch ul li ul li {
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.branch ul li ul li:before {
+    content: "•";
+    color: #4CAF50;
+    position: absolute;
+    left: 0;
+}
+
+.apply-btn {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+    background: #45a049;
+}
+
+/* Program specific colors */
+.btech .program-icon i {
+    color: #2196F3;
+}
+
+.btech h2 {
+    border-color: #2196F3;
+}
+
+.btech .branch h3 {
+    color: #2196F3;
+}
+
+.btech .apply-btn {
+    background: #2196F3;
+}
+
+.btech .apply-btn:hover {
+    background: #1976D2;
+}
+
+.mtech .program-icon i {
+    color: #9C27B0;
+}
+
+.mtech h2 {
+    border-color: #9C27B0;
+}
+
+.mtech .branch h3 {
+    color: #9C27B0;
+}
+
+.mtech .apply-btn {
+    background: #9C27B0;
+}
+
+.mtech .apply-btn:hover {
+    background: #7B1FA2;
+}
+
+.diploma .program-icon i {
+    color: #FF9800;
+}
+
+.diploma h2 {
+    border-color: #FF9800;
+}
+
+.diploma .branch h3 {
+    color: #FF9800;
+}
+
+.diploma .apply-btn {
+    background: #FF9800;
+}
+
+.diploma .apply-btn:hover {
+    background: #F57C00;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .courses-hero h1 {
+        font-size: 36px;
+    }
+    
+    .courses-hero p {
+        font-size: 18px;
+    }
+    
+    .program-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .branch {
+        padding: 20px;
+    }
+}
+
+.courses-hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 50px;
+}
+
+.courses-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadeInDown 0.8s ease;
+}
+
+.courses-hero p {
+    font-size: 20px;
+    opacity: 0.9;
+    animation: fadeInUp 0.8s ease;
+}
+
+.programs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.program-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+}
+
+.program-icon {
+    font-size: 40px;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.program-card h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.program-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.branch {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.branch h3 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.branch ul {
+    list-style: none;
+    padding: 0;
+}
+
+.branch ul li {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.branch ul ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.branch ul ul li {
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.branch ul ul li:before {
+    content: "•";
+    color: #4CAF50;
+    margin-right: 8px;
+}
+
+.apply-btn {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
+    padding: 12px 30px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.apply-btn:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .program-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .courses-hero h1 {
+        font-size: 36px;
+    }
+    
+    .courses-hero p {
+        font-size: 18px;
+    }
+}

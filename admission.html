@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form - Codegenix Institute of Technology</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admission.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="contact-info">
+                <span><i class="fas fa-question-circle"></i> Have a questions?</span>
+                <span><i class="fas fa-phone"></i>7717671774</span>
+                <span><i class="fas fa-envelope"></i> info@mydomain.com</span>
+            </div>
+            <div class="auth-buttons" id="authButtons" style="display: none;">
+                <a href="login.html" class="login-btn">Log In</a>
+                <a href="register.html" class="register-btn">Register</a>
+            </div>
+            <div class="user-menu" id="userMenu" style="display: none;">
+                <span class="user-email"></span>
+                <button class="logout-btn" onclick="logout()">Logout</button>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="logo">
+                <span class="logo-letter">Code</span>genix
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="admission.html" class="active">Admissions</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="admission-container">
+        <div class="admission-form">
+            <div class="form-header">
+                <img src="images/icon.jpg" alt="Institute Logo" class="logo-img">
+                <h2>EDUCATIONAL & IT TRAINING ACADEMY</h2>
+                <h3>ADMISSION FORM</h3>
+            </div>
+            
+            <form id="admissionForm" onsubmit="handleAdmissionSubmit(event)">
+                <div class="form-group">
+                    <label for="studentName">Student's Name:</label>
+                    <input type="text" id="studentName" name="studentName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fatherName">Father's Name:</label>
+                    <input type="text" id="fatherName" name="fatherName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="motherName">Mother's Name:</label>
+                    <input type="text" id="motherName" name="motherName" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="birthDate">Birth Date:</label>
+                        <input type="date" id="birthDate" name="birthDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="address-section">
+                    <h4>Present Address</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="division">Division:</label>
+                            <input type="text" id="division" name="division" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="district">District:</label>
+                            <input type="text" id="district" name="district" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" required></textarea>
+                    </div>
+                </div>
+
+                <div class="address-section">
+                    <h4>Permanent Address</h4>
+                    <div class="same-address-checkbox">
+                        <input type="checkbox" id="sameAddress" name="sameAddress">
+                        <label for="sameAddress">Same as Present Address</label>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="permDivision">Division:</label>
+                            <input type="text" id="permDivision" name="permDivision" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="permDistrict">District:</label>
+                            <input type="text" id="permDistrict" name="permDistrict" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="permAddress">Address:</label>
+                        <textarea id="permAddress" name="permAddress" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="religion">Religion:</label>
+                        <input type="text" id="religion" name="religion">
+                    </div>
+                    <div class="form-group">
+                        <label for="nationality">Nationality:</label>
+                        <input type="text" id="nationality" name="nationality" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nid">ABC ID:</label>
+                        <input type="text" id="nid" name="nid">
+                    </div>
+                    <div class="form-group">
+                        <label for="bloodGroup">Blood Group:</label>
+                        <select id="bloodGroup" name="bloodGroup" class="blood-group-select">
+                            <option value="">Select Blood Group</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="occupation">Occupation:</label>
+                        <input type="text" id="occupation" name="occupation">
+                    </div>
+                    <div class="form-group">
+                        <label>Status:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="single" name="status" value="single" required>
+                            <label for="single">Single</label>
+                            <input type="radio" id="married" name="status" value="married">
+                            <label for="married">Married</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="courseName">Select Course:</label>
+                    <select id="courseName" name="courseName" required class="course-select">
+                        <option value="">Select a course</option>
+                        <optgroup label="B.Tech Programs">
+                            <option value="btech_cse">B.Tech in Computer Science & Engineering</option>
+                            <option value="btech_it">B.Tech in Information Technology</option>
+                            <option value="btech_ece">B.Tech in Electronics & Communication</option>
+                            <option value="btech_eee">B.Tech in Electrical & Electronics</option>
+                        </optgroup>
+                        <optgroup label="M.Tech Programs">
+                            <option value="mtech_cse">M.Tech in Computer Science & Engineering</option>
+                            <option value="mtech_ai">M.Tech in Artificial Intelligence</option>
+                            <option value="mtech_ds">M.Tech in Data Science</option>
+                            <option value="mtech_cs">M.Tech in Cyber Security</option>
+                        </optgroup>
+                        <optgroup label="Diploma Programs">
+                            <option value="diploma_cse">Diploma in Computer Science</option>
+                            <option value="diploma_it">Diploma in Information Technology</option>
+                            <option value="diploma_ece">Diploma in Electronics</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="declaration">
+                    <h4>DECLARATION</h4>
+                    <div class="declaration-checkbox">
+                        <input type="checkbox" id="declaration" name="declaration" required>
+                        <label for="declaration">I hereby declare that I will obey all the rules and regulations of the institution and be responsible for violating the rules.</label>
+                    </div>
+                </div>
+
+                <div class="form-submit">
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="admission-auth.js"></script>
+    <script src="admission.js"></script>
+</body>
+</html>
