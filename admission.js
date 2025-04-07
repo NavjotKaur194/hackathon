@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const checkbox = document.getElementById('sameAddress');
     
     checkbox.addEventListener('change', function() {
